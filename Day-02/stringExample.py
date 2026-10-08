@@ -1,2 +1,0 @@
-s="Rishitha"
-print(s)
