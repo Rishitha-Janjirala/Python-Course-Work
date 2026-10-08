@@ -1,0 +1,2 @@
+s="Rishitha"
+print(s)
