@@ -53,7 +53,6 @@ print(f'Symmetric:{a ^ b}')
 
 
 # 2. Frozenset
-
 # A frozenset is an immutable version of a set. Once created, its elements cannot be added or removed.
 
 data = frozenset({10, 20, 30})
