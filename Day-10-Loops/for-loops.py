@@ -97,3 +97,75 @@ for i in li:
     if i>maxi:
         maxi=i
 print(f"max ele in list is: {maxi}")
+
+# 13.Print Even Numbers from 1 to 10
+n=int(input("enter num:"))
+for i in range(1,n+1):
+    if i%2==0:
+        print(i)
+
+# 14.Print Elements of a List-intergers
+li=list(map(int,input("enter list:").split()))
+n=len(li)
+for i in range(n):
+    print(li[i])
+
+#for string list input
+li=input().split()
+n=len(li)
+for i in range(n):
+    print(li[i])
+    
+#15.Find maximum value in a list
+li=list(map(int,input().split()))
+maxi=0
+for i in range(len(li)):
+    if li[i]>maxi:
+        maxi=li[i]
+print(maxi)
+
+
+# 16.Common Elements Between Two Lists
+l1=list(map(int,input("enter list1:").split()))
+l2=list(map(int,input("enter list2:").split()))
+
+for i in l1:
+    for j in l2:
+        if i==j:
+            print(i)
+
+#17.Reverse a string
+string=input("enter string:")
+n=len(string)
+for i in range(n-1,-1,-1):
+    print(string[i],end='')
+
+#18.Generate a list of squares for numbers from 1 to 10 using a for loop.
+n=int(input("enter number:"))
+li=[]
+for i in range(1,n+1):
+    li.append(i**2)
+print(li)
+
+#19.Count the number of words in a sentence using a for loop.
+n=input()
+words=1
+for i in range(len(n)):
+    if n[i]==" ":
+        words+=1
+print(words)
+
+
+# 20.Calculate the power of a number using a for loop.
+base=int(input("enter base:"))
+expo=int(input("enter exponent:"))
+
+res=1
+for i in range(expo):
+    res=res*base
+print(res)
+
+# base=int(input("enter base:"))
+# expo=int(input("enter exponent:"))
+
+# print("res:",base**expo)
