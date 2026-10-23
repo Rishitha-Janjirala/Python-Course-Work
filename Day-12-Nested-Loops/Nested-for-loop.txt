@@ -1,0 +1,10 @@
+Nested loop:
+-->A loop inside another loop is known as nested loop
+-->writting or placing a loop inside another loop is known as nested loop
+
+Syntax:
+for var1 in seq1:
+    for var2 in seq2:
+        statements
+
+

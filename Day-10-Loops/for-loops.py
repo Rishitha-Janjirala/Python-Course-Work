@@ -169,3 +169,14 @@ print(res)
 # expo=int(input("enter exponent:"))
 
 # print("res:",base**expo)
+
+# #20.print prime numbers from 1-100
+print("primes numbers:",end="")
+for i in range(1, 100):
+    fc = 0
+    for j in range(1, i + 1):
+        if i % j == 0:
+            fc += 1
+
+    if fc == 2:
+        print(i,end=" ")

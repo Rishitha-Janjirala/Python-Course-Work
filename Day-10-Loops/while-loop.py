@@ -54,6 +54,12 @@ while i<=50:
         print(i,end=" ")
     i+=1
 
+#method/way 2
+i = 2
+while i <= 50:
+    print(i)
+    i += 2
+
 #7.Create a program that calculates the sum of the digits of a given integer using a while loop.
 
 n=int(input("enter number:"))

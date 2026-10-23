@@ -3,7 +3,7 @@
 for n in range(100,1000):
     for i in range(2,n):
         if n%i==0:
-            break
+            break             
     else:
         print(f"First prime num greater than 100 is:{n}")
         break
