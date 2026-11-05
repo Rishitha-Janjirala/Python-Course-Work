@@ -1,0 +1,92 @@
+1. What are Generators?
+
+- A generator is a special type of function used to generate values
+  one by one instead of returning all values at once.
+- A function that contains the yield keyword is known as a
+  generator function.
+- When a generator function is called, it returns a generator object.
+
+2. Why Do We Need Generators?
+1. Memory saving: Generators produce values one at a time, so they
+   do not need to store all values in memory.
+2. Large data: They are useful when working with large datasets
+   because values are generated only when needed.
+
+3. What is yield?
+- yield returns a value and pauses the function.
+- It remembers the function's current state.
+- When the generator is called again using next(), execution resumes
+  from where it stopped.
+
+4. What is next()?
+- The next() function is used to get the next value from a generator
+  (iterator).
+- It starts the generator's execution the first time it is called.
+- Each later call resumes execution from the previous yield
+  statement.
+- When the generator has no more values, next() raises a
+  StopIteration exception.
+
+5. Example: Generator Function
+def my_gen():
+    print("start")
+    yield "hello"
+
+    print("one")
+    yield "hi"
+
+    print("two")
+
+
+m = my_gen()
+
+print(m)
+print(next(m))
+print(next(m))
+print(next(m))
+
+6. Output and Explanation
+The output is similar to:
+<generator object my_gen at 0x...>
+start
+hello
+one
+hi
+two
+Traceback (most recent call last):
+  ...
+StopIteration
+The generator object's memory address (0x...) will be different each
+time.
+Step-by-step execution
+
+1. Create the generator object
+m = my_gen()
+print(m)
+Calling my_gen() does not execute the function body immediately. It
+creates and returns a generator object.
+
+2. First next() call
+print(next(m))
+Output:
+start
+hello
+Execution starts, prints start, reaches yield "hello", and pauses.
+The yielded value hello is printed.
+
+3. Second next() call
+print(next(m))
+Output:
+one
+hi
+Execution resumes after the first yield, prints one, reaches
+yield "hi", and pauses. The yielded value hi is printed.
+
+4. Third next() call
+print(next(m))
+Output before the exception:
+two
+Execution resumes after the second yield, prints two, and reaches
+the end of the function. Since there are no more values, Python raises
+StopIteration.
+
