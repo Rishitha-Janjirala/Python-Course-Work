@@ -1,0 +1,32 @@
+Recursive Functions:-
+
+-What is Recursion?
+Recursion is a programming technique where a function calls itself to solve a smaller
+instance of the same problem.
+It continues doing this until it reaches a condition where it no longer makes a recursive call.
+This is known as the base case.
+
+-Structure of a Recursive Function
+-Every recursive function has two main parts:
+1. Base Case – the condition under which the recursion stops.
+2. Recursive Case – the part where the function calls itself.
+
+Advantages of Recursion
+
+Python
+● Useful for problems that can be broken into smaller sub-problems (divide and
+conquer).
+● Simplifies code for complex problems (like tree traversal, backtracking).
+
+Disadvantages of Recursion
+● Can be less efficient than loops (due to memory use in the call stack).
+● May lead to RecursionError if the recursion depth exceeds Python’s limit (default
+is 1000).
+
+Best Practices
+● Always define a clear base case.
+● For performance-critical tasks, use loops or optimize with memoization or iteration.
+● You can check or set the recursion limit using:
+
+import sys
+sys.setrecursionlimit(2000)
