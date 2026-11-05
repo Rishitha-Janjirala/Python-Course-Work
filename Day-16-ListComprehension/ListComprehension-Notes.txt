@@ -1,0 +1,30 @@
+-->What is List Comprehension?
+--List comprehension is a short and simple way to create a new list from an existing iterable (list, tuple, string, range, etc.) in a single line.
+
+--It reduces the number of lines compared to using normal for loops.
+
+Normal for loop:
+
+L = [1, 2, 3, 4, 5]
+result = []
+
+for i in L:
+    result.append(i)
+
+print(result)
+
+Using list comprehension:
+
+L = [1, 2, 3, 4, 5]
+
+result = [i for i in L]
+
+print(result)
+
+Syntax of List Comprehension:
+[expression for item in iterable if condition]
+item--Variable name of value
+iterable--sequence where we can loop on It
+expression--It means tells what to do with item
+condition--filteration
+
