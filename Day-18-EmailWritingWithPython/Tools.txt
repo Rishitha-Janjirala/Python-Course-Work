@@ -1,0 +1,37 @@
+Tools Needed:
+
+Python installed on your system.
+A Gmail account.
+Enable Gmail’s "App Password" (safer than using your real password).
+What is smtplib?
+Full Form:
+smtplib = SMTP Library
+It stands for: Simple Mail Transfer Protocol Library
+It is a built-in Python module used to send emails using the SMTP protocol (the standard protocol for email transmission).
+
+What is smtplib.SMTP_SSL(...)?
+🔹 Full Form:
+SMTP_SSL = SMTP over Secure Sockets Layer
+It is a secure version of the SMTP client, which:
+Uses SSL (Secure Sockets Layer) to encrypt the connection between your Python script and the email server (like Gmail).
+Ensures your login and email content are safely transmitted, protecting from hackers.
+
+
+
+Step-by-Step Project Development:
+
+Step 1: Setup Gmail for Sending Emails
+
+Enable 2-Step Verification on your Gmail:
+Go to: https://myaccount.google.com/security
+
+Turn on 2-Step Verification
+
+Generate App Password:
+After enabling 2FA, go to: https://myaccount.google.com/apppasswords
+
+Select Mail and Windows Computer, click Generate.
+Copy the 16-character password shown (you'll use it in the Python script instead of your Gmail password).
+
+Step 2: Install Python and Create Script
+No need to install anything extra. Python comes with the required libraries.
