@@ -1,0 +1,96 @@
+"""
+PYTHON NOTES: MODULES AND USER-DEFINED MODULES
+===============================================
+
+1. INTRODUCTION TO MODULES
+--------------------------
+A module is a Python file (.py) that contains reusable Python code, such as:
+- Functions
+- Classes
+- Variables
+- Executable statements
+
+Instead of writing an entire program in one file, we can divide it into
+smaller files called modules and import the code whenever required.
+
+Example:
+    calculator.py
+    student.py
+    employee.py
+
+
+2. ADVANTAGES OF MODULES
+-----------------------
+1. Code Reusability:
+   Write code once and use it in multiple programs.
+
+2. Better Code Organization:
+   Divide a large program into smaller, meaningful files.
+
+3. Reduces Code Duplication:
+   Reuse existing functions instead of writing the same code again.
+
+4. Easier Debugging:
+   Find and fix errors in a particular module more easily.
+
+5. Easier Maintenance:
+   Update one module without changing the entire program.
+
+6. Team Collaboration:
+   Different developers can work on different modules.
+
+
+3. TYPES OF MODULES
+-------------------
+Python modules are commonly classified into three categories:
+
+A. USER-DEFINED MODULES
+   Modules created by programmers according to their requirements.
+
+   Examples:
+       calculator.py
+       student.py
+       employee.py
+
+B. STANDARD LIBRARY MODULES
+   Modules supplied with Python. We can import them without installing
+   additional packages.
+
+   Examples:
+       math
+       os
+       random
+       datetime
+       statistics
+       sys
+
+C. THIRD-PARTY MODULES
+   Modules/packages developed by external developers or organizations.
+   They are generally installed using pip.
+
+   Examples:
+       requests
+       numpy
+       pandas
+       matplotlib
+
+   Installation example (run in the terminal):
+       python -m pip install requests
+
+
+4. HOW TO IMPORT A MODULE
+-------------------------
+
+Syntax:
+    import module_name
+
+Example:
+    import math
+    print(math.sqrt(25))
+
+Output:
+    5.0
+
+We can also import a specific function:
+
+    from math import sqrt
